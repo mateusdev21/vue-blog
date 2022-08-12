@@ -83,7 +83,7 @@ export default {
       this.itemsHeadline = data.articles;
     },
     readArticle(title) {
-      this.$router.push(`article?${title}`);
+      this.$router.push(`article?q=${title}`);
     },
   },
 };

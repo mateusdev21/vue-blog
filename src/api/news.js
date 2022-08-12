@@ -21,3 +21,13 @@ export async function getHeadline() {
     })
     return res
 }
+
+export async function getArticle(title) {
+    const res = await apiHandler.get(`/everything`, {
+        params: {
+            apiKey: 'eeddad64c2e84848af45131d0162a726',
+            q: title
+        }
+    })
+    return res
+}
