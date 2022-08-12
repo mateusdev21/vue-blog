@@ -26,7 +26,6 @@ export default {
           align: "center",
           sortable: true,
         },
-        { text: "Action", value: "action", align: "center", sortable: false },
       ],
       items: [],
     };
@@ -52,11 +51,6 @@ export default {
       this.items.map(getSourceName);
       function getSourceName(item) {
         return (item.source = item.source.name);
-      }
-
-      this.items.map(addAction);
-      function addAction(item) {
-        return (item.action = "Read");
       }
     },
   },

@@ -12,7 +12,7 @@
         :src="item.urlToImage"
         reverse-transition="fade-transition"
         transition="fade-transition"
-        :href="item.url"
+        @click="readArticle(item.title)"
       >
         <v-row class="fill-height mr-4 ml-8" align="center" justify="start">
           <h1 class="headline-title">{{ item.title }}</h1>
